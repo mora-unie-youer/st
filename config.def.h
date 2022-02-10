@@ -1,3 +1,4 @@
+char *externalpipe_sigusr1[] = {"/bin/sh", "-c", "externalpipe_buffer.sh st_strings_read"};
 /* See LICENSE file for copyright and license details. */
 
 /*
