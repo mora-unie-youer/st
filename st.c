@@ -2019,7 +2019,7 @@ strhandle(void)
 				}
 			}
 			return;
-		case 10:
+		case 10: /* set foreground color */
 			if (narg < 2)
 				break;
 
@@ -2032,7 +2032,7 @@ strhandle(void)
 			else
 				redraw();
 			return;
-		case 11:
+		case 11: /* set background color */
 			if (narg < 2)
 				break;
 
@@ -2045,7 +2045,7 @@ strhandle(void)
 			else
 				redraw();
 			return;
-		case 12:
+		case 12: /* set cursor color */
 			if (narg < 2)
 				break;
 
@@ -2057,7 +2057,7 @@ strhandle(void)
 				fprintf(stderr, "erresc: invalid cursor color: %s\n", p);
 			else
 				redraw();
-			return;
+			break;
 		case 4: /* color set */
 			if (narg < 3)
 				break;
