@@ -1192,6 +1192,7 @@ xinit(int w, int h)
 		win.h = h;
 		break;
 	}
+
 	win.w = 2 * win.hborderpx + 2 * borderpx + cols * win.cw;
 	win.h = 2 * win.vborderpx + 2 * borderpx + rows * win.ch;
 
