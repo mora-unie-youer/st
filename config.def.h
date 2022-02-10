@@ -106,6 +106,17 @@ static int vbelltimeout = 150;
 // #define VBCELL 1  /* all cells - whole screen */
 // #define VBCELL y==bottom && x>right-2  /* bottom-right */
 
+static int vbellmode = 1;
+/* vbellmode: 0: invert cells. 1: draw a circle with these parameters:
+ * - base and outline colors (colorname index - see below)
+ * - radius: relative to window width, or if negative: relative to cell-width
+ * - position: relative to window width/height (0 and 1 are at the edges) */
+static int vbellcolor = 3;
+static int vbellcolor_outline = 1;
+static float vbellradius = 0.015;
+static float vbellx = 1;
+static float vbelly = 0;
+
 /* default TERM value */
 char *termname = "st-256color";
 
